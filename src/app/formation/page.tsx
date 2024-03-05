@@ -1,7 +1,6 @@
 import React from 'react';
-import styles from './Page.module.css';
 
-const HomePage = () => {
+const FormationPage = () => {
     return (
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
             {/* Contenido de la página */}
@@ -20,32 +19,33 @@ const HomePage = () => {
                     </div>
                 </nav>
 
-                {/* Contenido de la página de inicio */}
+                {/* Contenido de la página de formación */}
                 <div className="container mx-auto py-8 px-4">
-                    <h1 className="text-3xl font-bold">EMILIO VIEIRA ANGEL</h1>
-                    <div className="mt-4">
-                        <p className="font-montserrat">
-                            <strong>ESTUDIANTE INGENIERIA DE SISTEMAS Y COMPUTACIÓN</strong>
-                        </p>
+                    <h1 className="text-4xl font-bold text-center mb-8">FORMACIÓN ACADÉMICA</h1>
 
-                        {/* Agregar la imagen aquí */}
-                        <img src="/images/foto.jpg" alt="Foto de perfil" className="mx-auto border-4 border-blue-800 rounded-full w-60 h-60 mt-4" />
+                    <div>
+                        <div className="mt-4">
+                            <h2 className="text-xl font-bold">Universidad EAFIT</h2>
+                            <p className="italic">Diplomado 2024-1 | Virtual</p>
+                            <p>- Formulación, evaluación y gestión de proyectos</p>
+                        </div>
 
                         <div className="mt-4">
-                            <h2 className="text-xl font-bold text-center">OBJETIVO</h2>
-                            <p className={`text-justify mt-2 ${styles.textJustify}`}>
-                                Mi objetivo es aplicar mis conocimientos en ingeniería de sistemas y computación en la formulación, evaluación y gestión de proyectos tecnológicos.
-                                Busco contribuir en equipos multidisciplinarios, impulsando la innovación y el desarrollo de soluciones efectivas en el ámbito tecnológico.
-                                Mi meta es alcanzar resultados significativos y agregar valor con mi pasión por la resolución de problemas y la excelencia técnica.
-                            </p>
+                            <h2 className="text-xl font-bold">Universidad EIA</h2>
+                            <p className="italic">Aspirante a grados 2025-1 | Envigado, Colombia</p>
+                            <p>- Ingeniería de sistemas y computación</p>
+                            <p>- Create-X Cohort 0, Georgia Institute of Technology</p>
                         </div>
-                        <div className="mt-8">
-                            <h2 className="text-xl font-bold text-center">IDIOMAS</h2>
-                            <div className="mt-2 text-center">
-                                <p><strong>Español</strong> - Nativo</p>
-                                <p><strong>Inglés</strong> - C1 (Aptis 2023)</p>
-                                <p><strong>Alemán</strong> - B2/C1 (Bachillerato Internacional 2018)</p>
-                            </div>
+
+                        <div className="mt-4">
+                            <h2 className="text-xl font-bold">100 Jahre Schule Bismark</h2>
+                            <p className="italic">Intercambio estudiantil 2015 | Bismark, Alemania</p>
+                        </div>
+
+                        <div className="mt-4">
+                            <h2 className="text-xl font-bold">Colegio Alemán Medellín</h2>
+                            <p className="italic">Egresado 2018 | Medellín, Colombia</p>
+                            <p>- Representante olimpiadas de matemáticas de Antioquia de Antonio Nariño (2014, 2016)</p>
                         </div>
                     </div>
                 </div>
@@ -67,4 +67,4 @@ const HomePage = () => {
     );
 }
 
-export default HomePage;
+export default FormationPage;

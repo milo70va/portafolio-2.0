@@ -1,7 +1,6 @@
 import React from 'react';
-import styles from './Page.module.css';
 
-const HomePage = () => {
+const ExperiencePage = () => {
     return (
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
             {/* Contenido de la página */}
@@ -20,32 +19,38 @@ const HomePage = () => {
                     </div>
                 </nav>
 
-                {/* Contenido de la página de inicio */}
+                {/* Contenido de la página de experiencia */}
                 <div className="container mx-auto py-8 px-4">
-                    <h1 className="text-3xl font-bold">EMILIO VIEIRA ANGEL</h1>
-                    <div className="mt-4">
-                        <p className="font-montserrat">
-                            <strong>ESTUDIANTE INGENIERIA DE SISTEMAS Y COMPUTACIÓN</strong>
-                        </p>
+                    <h1 className="text-4xl font-bold text-center mb-8">EXPERIENCIA LABORAL</h1>
 
-                        {/* Agregar la imagen aquí */}
-                        <img src="/images/foto.jpg" alt="Foto de perfil" className="mx-auto border-4 border-blue-800 rounded-full w-60 h-60 mt-4" />
-
-                        <div className="mt-4">
-                            <h2 className="text-xl font-bold text-center">OBJETIVO</h2>
-                            <p className={`text-justify mt-2 ${styles.textJustify}`}>
-                                Mi objetivo es aplicar mis conocimientos en ingeniería de sistemas y computación en la formulación, evaluación y gestión de proyectos tecnológicos.
-                                Busco contribuir en equipos multidisciplinarios, impulsando la innovación y el desarrollo de soluciones efectivas en el ámbito tecnológico.
-                                Mi meta es alcanzar resultados significativos y agregar valor con mi pasión por la resolución de problemas y la excelencia técnica.
+                    <div>
+                        <div className="text-center mb-8">
+                            <img src="/images/dna.png" alt="Logo DNA Universe" className="mx-auto mb-4" style={{ width: '200px' }} />
+                            <h2 className="text-2xl font-bold">Cofundador, CEO</h2>
+                            <p className="italic">DNA Universe | 2021 - 2023</p>
+                            <p className="mt-4">
+                                Liderazgo de equipos de más de 50 personas bajo la metodología ágil SCRUM, priorizando la 
+                                toma de decisiones y la evaluación de riesgos.
+                            </p>
+                            <p className="mt-4">
+                                Implementación nuevas tecnologías en proyectos multidisciplinarios, optimizando la 
+                                eficiencia operativa.
+                            </p>
+                            <p className="mt-4">
+                                Dirección de la gestión de equipos diversos, fomentando la colaboración y la innovación en 
+                                entornos dinámicos.
                             </p>
                         </div>
-                        <div className="mt-8">
-                            <h2 className="text-xl font-bold text-center">IDIOMAS</h2>
-                            <div className="mt-2 text-center">
-                                <p><strong>Español</strong> - Nativo</p>
-                                <p><strong>Inglés</strong> - C1 (Aptis 2023)</p>
-                                <p><strong>Alemán</strong> - B2/C1 (Bachillerato Internacional 2018)</p>
-                            </div>
+
+                        <div className="text-center mb-8">
+                            <h2 className="text-2xl font-bold">INTERESES</h2>
+                            <ul className="mt-4">
+                                <li>- Blockchain</li>
+                                <li>- Inteligencia Artificial</li>
+                                <li>- Videojuegos</li>
+                                <li>- Formulación, evaluación y gestión de proyectos</li>
+                                <li>- Nuevas tecnologías</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -67,4 +72,5 @@ const HomePage = () => {
     );
 }
 
-export default HomePage;
+export default ExperiencePage;
+
